@@ -85,11 +85,10 @@ Your code should maintain good code quality by following the
 * Localize your variables as much as possible. You should not use any global variables (outside the module pattern) - see [Code Quality Guide](https://courses.cs.washington.edu/courses/cse154/codequalityguide/_site/javascript/#module-pattern) for reference. Only use module-global variables whenever absolutely necessary. Do not store DOM element objects, such as those returned by the `document.getElementById` function, as module-global variables.
 * Limit your use of anonymous functions - meaningful behavior should be factored out with a named function
 * Do not make unnecessary requests to your API. That is, there should be no code in your JS that requests from an API and **never** does anything with the response.
-* All your JS code must pass [ESLint](https://oxford.cs.washington.edu/cse154/jslint/) with no errors.
 
 **New CP4-Specific Requirements** (in addition to following the Node.js section of the Code Quality Guide):
 * Your Node.js web service should specify the correct content type by setting the header using a consistent convention before outputting and response (this includes 400 errors). These headers should only be set when necessary and should not be overridden.
-* Your Node.js code should not generate any HTML 
+* Your Node.js code should not generate any HTML
 * Similar to your client-side JS, decompose your Node.js/Express API by writing smaller, more generic functions that complete one task rather
 than a few larger "do-everything" functions - no function should be more than 30 lines of code, and your Node.js should have _at least_ one helper function defined and used. Consider factoring out important behavior for your different GET requests into functions.
 
@@ -100,6 +99,8 @@ and detailed in the [CSE 154 Code Quality Guidelines](https://courses.cs.washing
 naming conventions, curly brace locations, etc.
 * Place a comment header in each file with your name, section, and a brief description of the file (examples have been given on previous assignments)
 * If you want to explore other HTML/CSS/JS features beyond what we've taught in class, you must cite what resources you used to learn them in order to be eligible for credit. We strongly encourage students to ask the staff for resources instead of finding online tutorials on their own (some are better than others).
+* All your JS code must pass [ESLint](https://oxford.cs.washington.edu/cse154/jslint/) with no errors, your CSS must lint with no errors and your HTML must validate with no errors. 
+
 
 **New CP4-Specific Requirements** (in addition to following the Node.js section of the Code Quality Guide):
 * Document your Node.js functions using the same JSDoc requirements as your client-side JS file (e.g. `@param` and `@return`).  
