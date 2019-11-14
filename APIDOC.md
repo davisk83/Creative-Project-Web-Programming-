@@ -1,47 +1,47 @@
-# *FILL IN NAME* API Documentation
-*Fill in a short description here about the API's purpose.*
+# Presidential Campaign API Documentation
+The presidential campaign API provides information about the president's profile and his greeting
+message.
 
-## *Fill in Endpoint 1 Title*
-**Request Format:** *Fill in example request format*
+## President's Greeting Message
+**Request Format:** /greet
 
-**Request Type:** *Fill in request type*
+**Request Type:** GET
 
 **Returned Data Format**: Plain Text
 
-**Description:** *Fill in description*
+**Description:** Return a greeting message.
 
-
-**Example Request:** *Fill in example request*
+**Example Request:** /greet
 
 **Example Response:**
-*Fill in example response in the ticks*
 
 ```
-
+Hello, VOTE FOR ME NOW!
 ```
 
-**Error Handling:**
-*Fill in an example of the error handling*
+**Error Handling:** Possible 400 (invalid request) errors (all plain text)
 
-## *Fill in Endpoint 2 Title*
-**Request Format:** *Fill in example request format*
+## President's Profile
+**Request Format:** /profile
 
-**Request Type:** *Fill in request type*
+**Request Type:** GET
 
 **Returned Data Format**: JSON
 
-**Description:** *Fill in description*
+**Description:** Return a JSON of a basic profile.
 
-**Example Request:** *Fill in example request*
+
+**Example Request:** /profile
 
 **Example Response:**
-*Fill in example response in the {}*
 
-```json
+```
 {
-
+  "name": "Davis Kurniawan",
+  "age": "27",
+  "nationality": "Mexican"
 }
 ```
 
 **Error Handling:**
-*Fill in an example of the error handling*
+N/A
