@@ -3,7 +3,7 @@ The presidential campaign API provides information about the president's profile
 message.
 
 ## President's Greeting Message
-**Request Format:** /greet
+**Request Format:** /action/:action
 
 **Request Type:** GET
 
@@ -11,7 +11,7 @@ message.
 
 **Description:** Return a greeting message.
 
-**Example Request:** /greet
+**Example Request:** /action/greet
 
 **Example Response:**
 
@@ -19,7 +19,9 @@ message.
 Hello, VOTE FOR ME NOW!
 ```
 
-**Error Handling:** Possible 400 (invalid request) errors (all plain text)
+**Error Handling:**
+- Possible 400 (invalid request) errors (all plain text):
+  - If passed in an invalid action type (not "greet"), returns an error with the message: Incorrect action types!
 
 ## President's Profile
 **Request Format:** /profile

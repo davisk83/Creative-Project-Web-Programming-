@@ -21,20 +21,13 @@
 
   /** Request a greeting message from the local API. */
   function requestGreeting() {
-    fetch("greet")
+    fetch("action/greet")
       .then(checkStatus)
       .then(resp => resp.text())
-      .then(showGreeting)
+      .then(resp => {
+        id("message").textContent = resp;
+      })
       .catch(handleError);
-  }
-
-  /**
-   * Shows the greeting message.
-   * @param {String} response - a greeting message.
-   */
-  function showGreeting(response) {
-    id("message").textContent = response;
-    id("greet").disabled = true;
   }
 
   /** Request the president's profile from the local API. */
