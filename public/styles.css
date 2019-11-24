@@ -1,0 +1,103 @@
+/*
+  Name: Davis Kurniawan
+  Date: November 13, 2019
+  Section: CSE 154 AE/Andrew Wolframs
+
+  This is the styles.css page for my portfolio of web development work. It is used by all pages
+  in my portfolio to give the site a consistent look and feel.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+header {
+  padding: 20px 25px;
+}
+
+main {
+  float: left;
+  text-align: justify;
+  width: 60%;
+}
+
+aside {
+  float: right;
+  text-align: center;
+  width: 40%;
+}
+
+aside img {
+  width: 371px;
+  max-width: 100%;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 5px;
+  background-color: black;
+}
+
+nav ul li {
+  display: inline;
+  border-right: 1px solid white;
+  padding: 5px 5px;
+}
+
+body, section {
+  background-color: lightblue;
+  font-family: 'Mansalva', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+header, #container footer {
+  background-color: lightgrey;
+}
+
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  border-style: groove;
+}
+
+#error {
+  color: red;
+  font-size: 30px;
+}
+
+#user-interface, #buttons {
+  padding: 10px;
+}
+
+#container footer {
+  clear: both;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+#voting-interface button {
+  display: block;
+  margin: auto;
+}
+
+#fans-container img {
+  width: 50px;
+}
+
+nav a:link, nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
