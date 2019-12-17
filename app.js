@@ -31,6 +31,7 @@ app.get("/action/:action", function(req, res) {
     res.set("Content-Type", "text/plain");
     res.send(getGreeting());
   } else {
+    res.type("text");
     res.status(400).send("Incorrect action types!");
   }
 });
